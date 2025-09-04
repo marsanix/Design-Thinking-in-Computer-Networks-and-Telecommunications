@@ -1,0 +1,35 @@
+Nama Program:
+Teknik Komputer dan Jaringan
+
+Deskripsi Program:
+Program Belajar Teknik Komputer dan Jaringan dengan Pendekatan Industri di SMK Darussalam.
+
+Elemen Pembelajaran:
+Perkembangan teknologi di bidan teknik jaringan komputer dan telekomunikasi.
+Capaian Pembelajaran:
+Peserta mampu memahami perkembangan teknologi pada perangkat teknik jaringan komputer dan telekomunikasi termasuk 5G, Microwave Link, IPv6, teknologi serat optik terkini, IoT, Data Centre, Cloud Computing, dan Information Security serta isu-isu implementasi terkini antara lain keamanan informasi, penetrasi Internet.
+
+Catatan:
+- Program ini masuk ke dalam pembelajaran Kokurikuler mata pelajaran Teknik Komputer dan Jaringan dengan pendekatan Industri dan menerapkan Design Thinking.
+- Program ini berjalan selama 10 kali pertemuan dengan 1 jam setiap pertemuan.
+- Dengan Design Thinking dapat membantu siswa untuk melalui proses pembelajaran hingga menyelesaikan project akhir yaitu membuat prototype membangun topologi jaringan yang baik dan aman sesuai kebutuhan industri menggunakan aplikasi Cisco Packet Tracer.
+
+Fase-fase Pembelajaran:
+Berikut ini fase-fase proses pembelajaran hari ke-hari dengan menerapkan Design Thinking yang dikaitkan dengan materi-materi pembelajaran yang ada di fase tersebut hingga mencapai penyelesaian tugas akhir membuat prototype:
+1. Emphaty (Day 1 dan Day 2)
+2. Define (Day 3 dan Day 4)
+3. Ideat (Day 5)
+4. Prototype (Day 6, Day 7, dan Day 8)
+5. Testing (Day 9 dan Day 10)
+  
+Catatan fase-fase:
+- Day 1 dan Day 2 adalah fase Understand user needs --> Output: Persona
+- Day 3 dan Day 4 adalah fase Problem Statement
+- Day 5 adalah fase Brainsorm & Final Solution Concept
+- Day 9 adalah fase pengecekan apakah prototpye sudah berjalan dengan baik, seperti check ping antar subnet, check akses blok firewall, alert IDS, traffic dan lain-lain.
+- Day 10 adalah hari Final Presentation
+- Day 1 merupakan tahapan Onboarding --> akan mempelajari materi Professional: Learning Journey, CCA, dan FUNChallenge
+- Day 2, Day 3, Day 4, dan Day 5 merupakan tahapan Engagement
+- Day 6, Day 7, dan Day 8 merupakan tahapan Integration, akan mempelajari materi Prototyping Jaringan: Topologi (Konfigurasi IP, Firewall, Hardening dan lain-lain)
+- Day 9 dan Day 10 merupakan tahapan Assessment
+- Setelah selesai semua, terakhir adalah Placement, yaitu materi tentang Career Coaching

@@ -1,0 +1,110 @@
+Materi pembelajaran untuk 10 kali pertemuan dengan format Rencana Pembelajaran Sederhana (RPS): ada tujuan pertemuan, materi inti, metode, serta tugas/latihan, sesuai dengan kompetensi dasar dan learning objective:
+Peserta mampu memahami perkembangan teknologi pada perangkat teknik jaringan komputer dan telekomunikasi termasuk 5G, Microwave Link, IPv6, teknologi serat optik terkini, IoT, Data Centre, Cloud Computing, dan Information Security serta isu-isu implementasi terkini antara lain keamanan informasi, penetrasi Internet.
+
+📘 Materi Pembelajaran
+Mata Pelajaran: Teknologi Jaringan dan Telekomunikasi
+Jurusan: Teknik Komputer dan Jaringan (SMK)
+Durasi: 10 Pertemuan (1 jam/pertemuan)
+Proyek Akhir: Membangun topologi jaringan yang baik dan aman menggunakan Cisco Packet Tracer.
+
+📅 Pertemuan 1 – Pengantar Perkembangan Teknologi Jaringan
+===========================================================
+Tujuan: Peserta memahami evolusi jaringan komputer dan telekomunikasi.
+Materi:
+- Sejarah jaringan komputer (dari ARPANET hingga Internet)
+- Perkembangan telekomunikasi: dari 2G → 5G
+- Tren teknologi jaringan modern
+Metode: Ceramah interaktif + diskusi
+Tugas: Buat mindmap perkembangan teknologi jaringan dari masa ke masa.
+
+📅 Pertemuan 2 – Teknologi 5G dan Microwave Link
+=================================================
+Tujuan: Peserta memahami prinsip kerja 5G dan microwave link.
+Materi:
+- Arsitektur 5G dan perbedaan dengan 4G
+- Konsep latency, throughput, dan network slicing
+- Microwave link: fungsi dan penerapan pada backbone jaringan
+Metode: Presentasi + studi kasus penggunaan 5G dan microwave link di Indonesia
+Tugas: Cari contoh implementasi 5G/Microwave di Indonesia (laporan singkat).
+
+📅 Pertemuan 3 – Teknologi IPv6
+================================
+Tujuan: Peserta memahami konsep IPv6 dan perbedaannya dengan IPv4.
+Materi:
+- Keterbatasan IPv4 dan kebutuhan IPv6
+- Struktur alamat IPv6
+- Contoh konfigurasi dasar IPv6 di Cisco Packet Tracer
+Metode: Praktikum simulasi konfigurasi IPv6
+Tugas: Konfigurasikan alamat IPv6 sederhana pada 2 PC via Packet Tracer.
+
+📅 Pertemuan 4 – Teknologi Serat Optik Terkini
+==============================================
+Tujuan: Peserta mengenal perkembangan teknologi fiber optic.
+Materi:
+- Prinsip kerja serat optik
+- Jenis-jenis kabel FO (Single-mode, Multi-mode)
+- Teknologi terkini: DWDM, GPON, FTTx
+Metode: Penjelasan + demonstrasi kabel FO (jika tersedia)
+Tugas: Buat poster perbandingan jenis-jenis kabel FO.
+
+📅 Pertemuan 5 – Internet of Things (IoT)
+==========================================
+Tujuan: Peserta memahami konsep IoT dan implementasinya.
+Materi:
+- Definisi dan ekosistem IoT
+- Contoh penerapan IoT (Smart Home, Smart City)
+- Simulasi IoT sederhana di Packet Tracer (sensor + actuator)
+Metode: Simulasi IoT dengan Packet Tracer
+Tugas: Buat topologi IoT sederhana di Packet Tracer (misalnya sensor lampu).
+
+📅 Pertemuan 6 – Data Centre dan Cloud Computing
+================================================
+Tujuan: Peserta memahami konsep dasar Data Centre dan Cloud.
+Materi:
+- Struktur Data Centre (server, storage, network)
+- Cloud Computing: IaaS, PaaS, SaaS
+- Hybrid Cloud dan tren cloud di Indonesia
+Metode: Diskusi + studi kasus (contoh AWS, GCP, Azure, IDCloudHost)
+Tugas: Gambar arsitektur sederhana Data Centre vs Cloud.
+
+📅 Pertemuan 7 – Information Security
+=====================================
+Tujuan: Peserta memahami dasar keamanan informasi.
+Materi:
+- Prinsip keamanan (CIA Triad: Confidentiality, Integrity, Availability)
+- Ancaman jaringan: malware, phishing, DDoS
+- Dasar konfigurasi keamanan di router Packet Tracer (password, enkripsi)
+Metode: Simulasi keamanan dasar (enable password, enkripsi)
+Tugas: Amankan router sederhana di Packet Tracer dengan konfigurasi password.
+
+📅 Pertemuan 8 – Isu-isu Implementasi Jaringan Terkini
+======================================================
+Tujuan: Peserta memahami isu global dan nasional di bidang jaringan.
+Materi:
+- Keamanan informasi dalam era digital
+- Penetrasi internet global dan Indonesia
+- Kebijakan & regulasi terkait (contoh: UU ITE, keamanan data pribadi)
+Metode: Diskusi kelompok + presentasi mini
+Tugas: Buat esai singkat tentang tantangan implementasi jaringan di Indonesia.
+
+📅 Pertemuan 9 – Perancangan Topologi Jaringan
+==============================================
+Tujuan: Peserta mampu merancang topologi jaringan yang efisien.
+Materi:
+- Jenis topologi (star, bus, ring, mesh, hybrid)
+- Pertimbangan desain: kebutuhan, keamanan, biaya
+- Simulasi desain topologi jaringan LAN di Packet Tracer
+Metode: Praktikum Packet Tracer
+Tugas: Buat desain topologi LAN (minimal 5 PC, 1 router, 1 switch).
+
+📅 Pertemuan 10 – Implementasi & Presentasi Proyek Akhir
+========================================================
+Tujuan: Peserta mampu membangun dan mempresentasikan topologi jaringan yang aman.
+Materi:
+- Finalisasi desain topologi jaringan di Packet Tracer
+- Konfigurasi keamanan dasar (password, ACL sederhana)
+- Presentasi hasil kerja kelompok
+Metode: Praktikum + presentasi proyek
+Tugas Akhir: Membangun topologi jaringan yang baik dan aman di Cisco Packet Tracer sesuai studi kasus.
+
+👉 Dengan alur ini, siswa akan bertahap memahami teori → praktik dasar → isu-isu nyata → implementasi proyek akhir.
