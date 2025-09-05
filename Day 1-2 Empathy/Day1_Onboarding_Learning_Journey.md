@@ -54,7 +54,109 @@ Setelah sesi ini, peserta akan mampu:
 
 ---
 
-## 🧠 **SESI 3: Design Thinking Introduction (25 menit)**
+## 🌐 **SESI 3: Dasar-Dasar Jaringan - Network Types & Topologies (30 menit)**
+
+### Jenis-Jenis Jaringan Berdasarkan Cakupan Area
+
+#### **1. PAN (Personal Area Network)**
+- **Definisi**: Jaringan personal dengan jangkauan sangat terbatas (1-10 meter)
+- **Contoh**: Bluetooth antara smartphone dan earphone, koneksi USB
+- **Karakteristik**: 
+  - Jangkauan sangat pendek
+  - Untuk perangkat personal
+  - Konsumsi daya rendah
+
+#### **2. LAN (Local Area Network)**
+- **Definisi**: Jaringan lokal dalam satu gedung atau area terbatas
+- **Contoh**: Jaringan komputer di sekolah, kantor, atau rumah
+- **Karakteristik**:
+  - Jangkauan: 10 meter - 1 km
+  - Kecepatan tinggi (100 Mbps - 10 Gbps)
+  - Biaya rendah
+  - Mudah dikelola
+
+#### **3. MAN (Metropolitan Area Network)**
+- **Definisi**: Jaringan yang menghubungkan beberapa LAN dalam satu kota
+- **Contoh**: Jaringan antar kampus universitas, jaringan bank dalam satu kota
+- **Karakteristik**:
+  - Jangkauan: 1-50 km
+  - Menghubungkan multiple LAN
+  - Menggunakan fiber optic atau wireless
+
+#### **4. WAN (Wide Area Network)**
+- **Definisi**: Jaringan yang menghubungkan area geografis yang luas
+- **Contoh**: Internet, jaringan perusahaan multinasional
+- **Karakteristik**:
+  - Jangkauan: lebih dari 50 km
+  - Menghubungkan multiple MAN/LAN
+  - Menggunakan teknologi telekomunikasi
+
+### Topologi Jaringan
+
+#### **1. Topologi Bus**
+```
+PC1 ---- PC2 ---- PC3 ---- PC4
+         |
+      Terminator
+```
+- **Kelebihan**: Mudah instalasi, biaya murah
+- **Kekurangan**: Jika kabel utama putus, seluruh jaringan down
+- **Penggunaan**: Jaringan kecil, sudah jarang digunakan
+
+#### **2. Topologi Star**
+```
+      PC1
+       |
+ PC4 - HUB - PC2
+       |
+      PC3
+```
+- **Kelebihan**: Mudah troubleshooting, jika satu PC bermasalah tidak mempengaruhi yang lain
+- **Kekurangan**: Jika hub/switch rusak, seluruh jaringan down
+- **Penggunaan**: Paling umum digunakan di LAN modern
+
+#### **3. Topologi Ring**
+```
+PC1 ---- PC2
+ |        |
+PC4 ---- PC3
+```
+- **Kelebihan**: Data mengalir searah, tidak ada collision
+- **Kekurangan**: Jika satu link putus, seluruh jaringan terganggu
+- **Penggunaan**: Token Ring (sudah jarang)
+
+#### **4. Topologi Mesh**
+```
+PC1 ---- PC2
+ |  \    /  |
+ |   \  /   |
+PC4 ---- PC3
+```
+- **Kelebihan**: Redundancy tinggi, reliable
+- **Kekurangan**: Biaya tinggi, kompleks
+- **Penggunaan**: Jaringan backbone, data center
+
+#### **5. Topologi Hybrid**
+- **Definisi**: Kombinasi dari beberapa topologi
+- **Contoh**: Star-Bus, Star-Ring
+- **Penggunaan**: Jaringan enterprise yang besar
+
+### Aktivitas Praktis: "Topology Detective"
+
+**Instruksi untuk siswa:**
+1. Amati jaringan di sekolah kalian
+2. Identifikasi jenis jaringan (PAN/LAN/MAN/WAN)
+3. Gambar topologi yang kalian temukan
+4. Diskusikan kelebihan dan kekurangan topologi tersebut
+
+**Pertanyaan Diskusi:**
+- Mengapa sekolah menggunakan topologi star?
+- Apa yang terjadi jika switch utama rusak?
+- Bagaimana cara meningkatkan reliability jaringan sekolah?
+
+---
+
+## 🧠 **SESI 4: Design Thinking Introduction (25 menit)**
 
 ### Apa itu Design Thinking?
 Design Thinking adalah metodologi problem-solving yang berfokus pada user (human-centered) dengan 5 tahapan:
@@ -100,7 +202,7 @@ Design Thinking adalah metodologi problem-solving yang berfokus pada user (human
 
 ---
 
-## 📚 **SESI 4: Learning Journey Mapping (15 menit)**
+## 📚 **SESI 5: Learning Journey Mapping (15 menit)**
 
 ### Personal Learning Journey Canvas
 
@@ -136,7 +238,7 @@ Design Thinking adalah metodologi problem-solving yang berfokus pada user (human
 
 ---
 
-## 📊 **SESI 5: Current Capability Assessment (CCA) (20 menit)**
+## 📊 **SESI 6: Current Capability Assessment (CCA) (20 menit)**
 
 ### Self-Assessment Checklist
 
@@ -182,7 +284,7 @@ Design Thinking adalah metodologi problem-solving yang berfokus pada user (human
 
 ---
 
-## 🎮 **SESI 6: FUNChallenge - "Network Escape Room" (25 menit)**
+## 🎮 **SESI 7: FUNChallenge - "Network Escape Room" (25 menit)**
 
 ### Challenge Setup
 Kelas dibagi menjadi 4 tim. Setiap tim harus menyelesaikan serangkaian puzzle networking untuk "escape" dari ruangan virtual.
@@ -242,7 +344,7 @@ Hint: Caesar cipher dengan shift 13
 
 ---
 
-## 🤝 **SESI 7: Empathy Building - User Stories (10 menit)**
+## 🤝 **SESI 8: Empathy Building - User Stories (10 menit)**
 
 ### Network User Personas
 

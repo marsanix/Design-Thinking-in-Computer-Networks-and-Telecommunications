@@ -14,7 +14,163 @@ Setelah sesi ini, peserta akan mampu:
 
 ---
 
-## 🎯 **SESI 1: Teknologi Serat Optik Terkini (60 menit)**
+## 🌐 **SESI 1: IP Addressing & Subnetting - Dasar Pengalamatan Jaringan (50 menit)**
+
+### Mengapa IP Addressing Penting?
+
+Sebelum memahami security requirements, kita perlu memahami bagaimana perangkat di jaringan saling berkomunikasi. IP Address adalah seperti alamat rumah - tanpa alamat yang benar, data tidak bisa sampai ke tujuan.
+
+### A. Konsep Dasar IP Addressing - 15 menit
+
+#### **Apa itu IP Address?**
+- **Definisi**: Alamat logical yang unik untuk mengidentifikasi perangkat di jaringan
+- **Fungsi**: Memungkinkan routing data antar perangkat
+- **Analogi**: Seperti alamat rumah untuk pengiriman surat
+
+#### **IPv4 Address Structure**
+- **Format**: 32-bit address (4 oktet)
+- **Contoh**: 192.168.1.100
+- **Range**: 0.0.0.0 sampai 255.255.255.255
+- **Total**: ~4.3 miliar alamat
+
+#### **Komponen IPv4 Address**
+```
+192.168.1.100/24
+│   │   │ │   │
+│   │   │ │   └── Host portion
+│   │   │ └────── Network portion
+│   │   └──────── 
+│   └──────────── 
+└──────────────── 
+
+/24 = Subnet Mask = 255.255.255.0
+```
+
+### B. Kelas IP Address - 10 menit
+
+#### **Class A**
+- **Range**: 1.0.0.0 - 126.255.255.255
+- **Default Subnet Mask**: 255.0.0.0 (/8)
+- **Network**: 8 bit, Host: 24 bit
+- **Jumlah Host**: 16,777,214 per network
+- **Penggunaan**: Large organizations, ISP
+
+#### **Class B**
+- **Range**: 128.0.0.0 - 191.255.255.255
+- **Default Subnet Mask**: 255.255.0.0 (/16)
+- **Network**: 16 bit, Host: 16 bit
+- **Jumlah Host**: 65,534 per network
+- **Penggunaan**: Medium organizations
+
+#### **Class C**
+- **Range**: 192.0.0.0 - 223.255.255.255
+- **Default Subnet Mask**: 255.255.255.0 (/24)
+- **Network**: 24 bit, Host: 8 bit
+- **Jumlah Host**: 254 per network
+- **Penggunaan**: Small organizations, home networks
+
+#### **Private IP Ranges (RFC 1918)**
+- **Class A Private**: 10.0.0.0 - 10.255.255.255
+- **Class B Private**: 172.16.0.0 - 172.31.255.255
+- **Class C Private**: 192.168.0.0 - 192.168.255.255
+- **Loopback**: 127.0.0.0 - 127.255.255.255
+
+### C. Subnet Mask & CIDR - 15 menit
+
+#### **Apa itu Subnet Mask?**
+- **Fungsi**: Memisahkan network portion dari host portion
+- **Format**: Dotted decimal atau CIDR notation
+- **Contoh**: 255.255.255.0 = /24
+
+#### **CIDR (Classless Inter-Domain Routing)**
+```
+/24 = 255.255.255.0   = 11111111.11111111.11111111.00000000
+/25 = 255.255.255.128 = 11111111.11111111.11111111.10000000
+/26 = 255.255.255.192 = 11111111.11111111.11111111.11000000
+/27 = 255.255.255.224 = 11111111.11111111.11111111.11100000
+/28 = 255.255.255.240 = 11111111.11111111.11111111.11110000
+/29 = 255.255.255.248 = 11111111.11111111.11111111.11111000
+/30 = 255.255.255.252 = 11111111.11111111.11111111.11111100
+```
+
+#### **Menghitung Jumlah Host**
+- **Formula**: 2^(32-subnet_bits) - 2
+- **Contoh /24**: 2^(32-24) - 2 = 2^8 - 2 = 254 host
+- **Contoh /26**: 2^(32-26) - 2 = 2^6 - 2 = 62 host
+
+### D. Subnetting Praktis - 10 menit
+
+#### **Skenario**: Perusahaan dengan network 192.168.1.0/24 perlu dibagi menjadi 4 subnet
+
+**Langkah-langkah:**
+1. **Tentukan jumlah subnet**: 4 subnet
+2. **Hitung bit yang diperlukan**: 2^2 = 4, jadi perlu 2 bit
+3. **Subnet mask baru**: /24 + 2 = /26
+4. **Subnet mask**: 255.255.255.192
+
+**Hasil Subnetting:**
+```
+Subnet 1: 192.168.1.0/26   (192.168.1.1 - 192.168.1.62)
+Subnet 2: 192.168.1.64/26  (192.168.1.65 - 192.168.1.126)
+Subnet 3: 192.168.1.128/26 (192.168.1.129 - 192.168.1.190)
+Subnet 4: 192.168.1.192/26 (192.168.1.193 - 192.168.1.254)
+```
+
+#### **Aktivitas Praktis: "Subnet Calculator"**
+
+**Soal 1**: Network 10.0.0.0/8 perlu dibagi untuk:
+- Kantor Pusat: 1000 host
+- Cabang A: 500 host
+- Cabang B: 200 host
+- Cabang C: 100 host
+
+**Tugas Siswa**:
+1. Tentukan subnet mask untuk masing-masing
+2. Hitung range IP address
+3. Identifikasi network address dan broadcast address
+
+**Soal 2**: Sekolah dengan network 192.168.10.0/24 perlu:
+- Lab Komputer: 30 host
+- Ruang Guru: 20 host
+- Ruang Admin: 10 host
+- Guest Network: 50 host
+
+### E. VLSM (Variable Length Subnet Masking) - Bonus
+
+#### **Konsep VLSM**
+- **Definisi**: Menggunakan subnet mask yang berbeda-beda sesuai kebutuhan
+- **Keuntungan**: Efisiensi penggunaan IP address
+- **Prinsip**: Alokasi dari kebutuhan terbesar ke terkecil
+
+#### **Contoh VLSM**
+Network: 172.16.0.0/16
+
+**Kebutuhan**:
+- Departemen A: 2000 host → /21 (2046 host)
+- Departemen B: 1000 host → /22 (1022 host)
+- Departemen C: 500 host → /23 (510 host)
+- Point-to-Point Links: 2 host → /30 (2 host)
+
+**Alokasi**:
+```
+Dept A: 172.16.0.0/21   (172.16.0.1 - 172.16.7.254)
+Dept B: 172.16.8.0/22   (172.16.8.1 - 172.16.11.254)
+Dept C: 172.16.12.0/23  (172.16.12.1 - 172.16.13.254)
+P2P 1:  172.16.14.0/30  (172.16.14.1 - 172.16.14.2)
+P2P 2:  172.16.14.4/30  (172.16.14.5 - 172.16.14.6)
+```
+
+### Mengapa IP Addressing Penting untuk Security?
+
+1. **Network Segmentation**: Memisahkan traffic berdasarkan security zone
+2. **Access Control**: Firewall rules berdasarkan IP range
+3. **Monitoring**: Tracking aktivitas berdasarkan IP address
+4. **Incident Response**: Identifikasi sumber serangan
+5. **Compliance**: Audit trail dan logging
+
+---
+
+## 🎯 **SESI 2: Teknologi Serat Optik Terkini (60 menit)**
 
 ### A. Prinsip Kerja Serat Optik (20 menit)
 - **Dasar Fisika Fiber Optic**:
@@ -55,7 +211,7 @@ Setelah sesi ini, peserta akan mampu:
 
 ---
 
-## 🎯 **SESI 2: Competitive Analysis Review (15 menit)**
+## 🎯 **SESI 3: Competitive Analysis Review (15 menit)**
 
 ### Competitive Analysis Presentation
 **Format:** Setiap kelompok mempresentasikan hasil competitive analysis mereka
@@ -121,7 +277,7 @@ Setelah sesi ini, peserta akan mampu:
 
 ---
 
-## 🔒 **SESI 3: Security Framework Development (25 menit)**
+## 🔒 **SESI 4: Security Framework Development (25 menit)**
 
 ### Security Requirements Hierarchy
 

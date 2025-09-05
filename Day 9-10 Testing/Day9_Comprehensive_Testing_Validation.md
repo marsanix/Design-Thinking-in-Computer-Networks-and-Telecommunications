@@ -53,7 +53,98 @@ Setelah mengikuti sesi ini, peserta akan mampu:
 
 ---
 
-## 🧠 **SESI 2: Testing Strategy & Planning (20 menit)**
+## 📊 **SESI 2: Network Monitoring - Pemantauan Jaringan (20 menit)**
+
+### A. Konsep Network Monitoring (8 menit)
+
+#### 1. Definisi dan Tujuan
+- **Network Monitoring**: Proses pengawasan berkelanjutan terhadap kinerja dan keamanan jaringan
+- **Tujuan**:
+  - Deteksi dini masalah jaringan
+  - Optimasi performa
+  - Keamanan dan compliance
+  - Perencanaan kapasitas
+  - Troubleshooting yang efektif
+
+#### 2. Komponen yang Dipantau
+- **Bandwidth Utilization**: Penggunaan bandwidth per interface
+- **Latency**: Waktu respons jaringan
+- **Packet Loss**: Kehilangan paket data
+- **Device Health**: Status CPU, memory, temperature
+- **Security Events**: Intrusion attempts, anomali traffic
+- **Availability**: Uptime/downtime perangkat
+
+### B. Tools dan Protokol Monitoring (7 menit)
+
+#### 1. Protokol Monitoring
+- **SNMP (Simple Network Management Protocol)**:
+  - SNMPv1, v2c, v3 (dengan security)
+  - MIB (Management Information Base)
+  - OID (Object Identifier)
+- **Syslog**: Centralized logging
+- **NetFlow/sFlow**: Traffic analysis
+- **ICMP**: Ping, traceroute untuk connectivity testing
+
+#### 2. Monitoring Tools
+- **Open Source**:
+  - Nagios: Infrastructure monitoring
+  - Zabbix: Network dan application monitoring
+  - PRTG: Comprehensive network monitoring
+  - LibreNMS: Auto-discovering network monitoring
+- **Commercial**:
+  - SolarWinds NPM
+  - Cisco Prime Infrastructure
+  - PRTG Network Monitor
+  - ManageEngine OpManager
+
+#### 3. Cisco Packet Tracer Monitoring
+- **Simulation Mode**: Untuk melihat packet flow
+- **Device Monitoring**: CPU, memory usage
+- **Interface Statistics**: Traffic counters
+- **Event Logging**: System messages
+
+### C. Implementasi Monitoring Strategy (5 menit)
+
+#### 1. Monitoring Architecture
+- **Centralized Monitoring**: Single monitoring server
+- **Distributed Monitoring**: Multiple monitoring points
+- **Hybrid Approach**: Kombinasi centralized dan distributed
+
+#### 2. Key Performance Indicators (KPIs)
+- **Availability**: Target 99.9% uptime
+- **Response Time**: <100ms untuk local network
+- **Throughput**: Minimum 80% dari link capacity
+- **Error Rate**: <0.1% packet loss
+- **Security Incidents**: Zero tolerance untuk critical threats
+
+#### 3. Alerting dan Notification
+- **Threshold-based Alerts**: CPU >80%, Memory >90%
+- **Anomaly Detection**: Unusual traffic patterns
+- **Escalation Procedures**: Level 1, 2, 3 support
+- **Notification Methods**: Email, SMS, dashboard
+
+### 🎯 **Aktivitas Praktis: "Network Health Check"**
+**Durasi**: 5 menit
+
+**Instruksi**:
+1. Buka topology Packet Tracer dari Day 6-8
+2. Gunakan Simulation Mode untuk monitoring
+3. Lakukan health check pada setiap device
+4. Dokumentasikan findings
+
+**Checklist Monitoring**:
+- [ ] Router CPU dan memory usage
+- [ ] Switch port utilization
+- [ ] Interface error counters
+- [ ] Ping response times antar subnet
+- [ ] VLAN traffic distribution
+- [ ] Security policy violations
+
+**Output**: Network health report dengan recommendations
+
+---
+
+## 🧠 **SESI 3: Testing Strategy & Planning (20 menit)**
 
 ### Testing Framework Review
 **Comprehensive Testing Approach:**

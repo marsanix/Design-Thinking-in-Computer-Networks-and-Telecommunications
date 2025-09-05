@@ -57,6 +57,98 @@ Setelah mengikuti sesi ini, peserta akan mampu:
   - Management network
   - Basic virtualization simulation
 
+## 🔧 **SESI 2: Network Components - Komponen Jaringan (20 menit)**
+
+### A. Hardware Components (10 menit)
+
+#### 1. Router
+- **Fungsi**: Menghubungkan jaringan yang berbeda, routing traffic
+- **Karakteristik**:
+  - Bekerja di Layer 3 (Network Layer)
+  - Memiliki routing table
+  - Dapat melakukan NAT, DHCP, Firewall
+- **Contoh**: Cisco 1941, 2911, ISR 4000 series
+- **Port**: Ethernet, Serial, Console
+
+#### 2. Switch
+- **Fungsi**: Menghubungkan perangkat dalam satu jaringan
+- **Karakteristik**:
+  - Bekerja di Layer 2 (Data Link Layer)
+  - Menggunakan MAC address table
+  - Mendukung VLAN
+- **Jenis**:
+  - **Unmanaged**: Plug-and-play, tidak bisa dikonfigurasi
+  - **Managed**: Dapat dikonfigurasi, monitoring, VLAN
+- **Contoh**: Cisco 2960, 3560, Catalyst 9000 series
+
+#### 3. Hub (Legacy)
+- **Fungsi**: Menghubungkan perangkat (sudah jarang digunakan)
+- **Karakteristik**:
+  - Bekerja di Layer 1 (Physical Layer)
+  - Collision domain besar
+  - Half-duplex communication
+- **Mengapa tidak digunakan**: Security issues, collision
+
+#### 4. Access Point (AP)
+- **Fungsi**: Menyediakan akses wireless
+- **Karakteristik**:
+  - Bridge antara wired dan wireless
+  - Mendukung multiple SSID
+  - Security: WPA2, WPA3
+- **Contoh**: Cisco Aironet, Meraki
+
+### B. Network Media & Cables (5 menit)
+
+#### 1. Twisted Pair Cable
+- **UTP (Unshielded)**: Cat5e, Cat6, Cat6a
+- **STP (Shielded)**: Untuk environment dengan interference
+- **Jarak maksimal**: 100 meter
+
+#### 2. Fiber Optic
+- **Single-mode**: Jarak jauh (hingga 40km)
+- **Multi-mode**: Jarak menengah (hingga 2km)
+- **Keuntungan**: Kecepatan tinggi, tidak terpengaruh interference
+
+#### 3. Wireless
+- **Standards**: 802.11a/b/g/n/ac/ax (WiFi 6)
+- **Frequency**: 2.4GHz, 5GHz, 6GHz
+- **Range**: Tergantung power dan obstacles
+
+### C. Network Services & Protocols (5 menit)
+
+#### 1. DHCP (Dynamic Host Configuration Protocol)
+- **Fungsi**: Memberikan IP address otomatis
+- **Components**: DHCP Server, Client, Scope, Lease
+- **Keuntungan**: Manajemen IP otomatis, mengurangi konflik
+
+#### 2. DNS (Domain Name System)
+- **Fungsi**: Mengubah domain name ke IP address
+- **Hierarchy**: Root, TLD, Authoritative servers
+- **Record types**: A, AAAA, CNAME, MX
+
+#### 3. NAT (Network Address Translation)
+- **Fungsi**: Mengubah private IP ke public IP
+- **Types**: Static NAT, Dynamic NAT, PAT (Port Address Translation)
+- **Keuntungan**: Menghemat public IP, security
+
+### 🎯 **Aktivitas Praktis: "Component Detective"**
+**Durasi**: 5 menit
+
+**Instruksi**:
+1. Bagi kelas menjadi 4 kelompok
+2. Setiap kelompok mendapat skenario jaringan
+3. Tentukan komponen yang dibutuhkan dan alasannya
+
+**Skenario**:
+- **Kelompok 1**: Kantor kecil (10 PC, 1 printer, internet)
+- **Kelompok 2**: Sekolah (100 PC, WiFi, server)
+- **Kelompok 3**: Warnet (20 PC, billing system, gaming)
+- **Kelompok 4**: Rumah (5 device, smart TV, IoT)
+
+**Output**: Diagram sederhana dengan komponen dan justifikasi
+
+---
+
 ## 🚀 Opening Activity (10 menit)
 
 ### Prototype Kickoff
@@ -70,6 +162,7 @@ Setelah mengikuti sesi ini, peserta akan mampu:
 - Bagaimana kita akan measure success?
 - Apa challenges yang mungkin kita hadapi?
 - Bagaimana mengintegrasikan konsep Data Center dan Cloud?
+- Komponen apa saja yang dibutuhkan berdasarkan materi sebelumnya?
 
 ---
 

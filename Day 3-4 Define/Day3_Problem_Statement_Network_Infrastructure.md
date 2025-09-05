@@ -14,7 +14,142 @@ Setelah sesi ini, peserta akan mampu:
 
 ---
 
-## 🎯 **SESI 1: Teknologi IPv6 - Solusi untuk Keterbatasan IPv4 (60 menit)**
+## 📚 **SESI 1: Dasar Komunikasi Jaringan - OSI dan TCP/IP Models (45 menit)**
+
+### Mengapa Perlu Memahami Model Jaringan?
+
+Sebelum mempelajari IPv6, kita perlu memahami bagaimana komunikasi jaringan bekerja. Bayangkan seperti mengirim surat:
+- Kita perlu alamat yang jelas (IP Address)
+- Perlu cara pengiriman (Protocol)
+- Perlu aturan bagaimana surat dikemas (Encapsulation)
+
+### A. OSI Model (Open Systems Interconnection) - 20 menit
+
+#### **Konsep Dasar OSI Model**
+OSI Model adalah kerangka kerja 7 layer yang menjelaskan bagaimana data bergerak dari satu komputer ke komputer lain melalui jaringan.
+
+#### **7 Layer OSI Model (dari atas ke bawah):**
+
+**Layer 7 - Application Layer** 🌐
+- **Fungsi**: Interface antara user dan jaringan
+- **Contoh**: Web browser, email client, FTP
+- **Protokol**: HTTP, HTTPS, SMTP, POP3, FTP
+- **Analogi**: Seperti aplikasi yang kita gunakan sehari-hari
+
+**Layer 6 - Presentation Layer** 🎭
+- **Fungsi**: Enkripsi, kompresi, format data
+- **Contoh**: SSL/TLS encryption, JPEG, MP3
+- **Analogi**: Seperti penerjemah bahasa
+
+**Layer 5 - Session Layer** 🤝
+- **Fungsi**: Membuat, mengelola, dan mengakhiri sesi komunikasi
+- **Contoh**: SQL sessions, NetBIOS
+- **Analogi**: Seperti operator telepon yang menghubungkan panggilan
+
+**Layer 4 - Transport Layer** 🚛
+- **Fungsi**: Pengiriman data yang reliable, flow control
+- **Protokol**: TCP (reliable), UDP (fast)
+- **Analogi**: Seperti jasa pengiriman paket (JNE, TIKI)
+
+**Layer 3 - Network Layer** 🗺️
+- **Fungsi**: Routing, logical addressing (IP)
+- **Protokol**: IP, ICMP, OSPF, BGP
+- **Device**: Router
+- **Analogi**: Seperti GPS yang menentukan rute terbaik
+
+**Layer 2 - Data Link Layer** 🔗
+- **Fungsi**: Frame formatting, error detection, MAC addressing
+- **Protokol**: Ethernet, WiFi (802.11)
+- **Device**: Switch, Bridge
+- **Analogi**: Seperti amplop surat dengan alamat lokal
+
+**Layer 1 - Physical Layer** ⚡
+- **Fungsi**: Transmisi bit melalui media fisik
+- **Contoh**: Kabel UTP, Fiber optic, Radio waves
+- **Device**: Hub, Repeater, Kabel
+- **Analogi**: Seperti jalan raya tempat kendaraan lewat
+
+#### **Mnemonik untuk Menghapal OSI:**
+**"All People Seem To Need Data Processing"**
+- **A**pplication
+- **P**resentation  
+- **S**ession
+- **T**ransport
+- **N**etwork
+- **D**ata Link
+- **P**hysical
+
+### B. TCP/IP Model - 15 menit
+
+#### **Konsep TCP/IP Model**
+TCP/IP adalah model praktis yang digunakan di Internet. Lebih sederhana dari OSI dengan 4 layer.
+
+#### **4 Layer TCP/IP Model:**
+
+**Layer 4 - Application Layer** 📱
+- **Setara OSI**: Layer 5, 6, 7
+- **Fungsi**: Semua fungsi aplikasi, presentasi, dan sesi
+- **Protokol**: HTTP, HTTPS, FTP, SMTP, DNS, DHCP
+- **Contoh**: Web browsing, email, file transfer
+
+**Layer 3 - Transport Layer** 🚚
+- **Setara OSI**: Layer 4
+- **Protokol**: TCP, UDP
+- **TCP**: Connection-oriented, reliable, slower
+- **UDP**: Connectionless, fast, less reliable
+- **Port Numbers**: Mengidentifikasi aplikasi (HTTP=80, HTTPS=443)
+
+**Layer 2 - Internet Layer** 🌍
+- **Setara OSI**: Layer 3
+- **Protokol**: IP (IPv4/IPv6), ICMP, ARP
+- **Fungsi**: Routing antar network
+- **IP Address**: Alamat logical untuk identifikasi device
+
+**Layer 1 - Network Access Layer** 🔌
+- **Setara OSI**: Layer 1, 2
+- **Fungsi**: Akses ke media fisik dan data link
+- **Teknologi**: Ethernet, WiFi, PPP
+- **MAC Address**: Alamat fisik network card
+
+### C. Perbandingan OSI vs TCP/IP - 5 menit
+
+| Aspek | OSI Model | TCP/IP Model |
+|-------|-----------|-------------|
+| **Jumlah Layer** | 7 Layer | 4 Layer |
+| **Penggunaan** | Teoritis, referensi | Praktis, implementasi |
+| **Fleksibilitas** | Sangat detail | Lebih sederhana |
+| **Adoption** | Standard referensi | Internet standard |
+| **Troubleshooting** | Sangat detail | Cukup untuk praktis |
+
+### D. Aktivitas Praktis: "Data Journey" - 5 menit
+
+**Skenario**: Siswa mengirim email dari komputer sekolah ke Gmail
+
+**Tugas Kelompok**:
+1. Trace perjalanan data melalui OSI layers
+2. Identifikasi protokol di setiap layer
+3. Jelaskan apa yang terjadi di setiap layer
+
+**Contoh Jawaban**:
+- **Layer 7**: User menulis email di aplikasi email
+- **Layer 6**: Email di-encode dalam format MIME
+- **Layer 5**: Sesi SMTP dibuat dengan mail server
+- **Layer 4**: TCP memastikan email terkirim reliable
+- **Layer 3**: IP routing menentukan jalur ke Gmail server
+- **Layer 2**: Ethernet frame membawa data di LAN sekolah
+- **Layer 1**: Sinyal listrik melalui kabel UTP
+
+### Mengapa OSI/TCP-IP Penting untuk IPv6?
+
+1. **Layer 3 (Network)**: IPv6 bekerja di layer ini
+2. **Addressing**: Memahami logical vs physical addressing
+3. **Routing**: IPv6 routing protocols
+4. **Troubleshooting**: Systematic approach untuk problem solving
+5. **Security**: IPSec built-in di IPv6 (Layer 3)
+
+---
+
+## 🎯 **SESI 2: Teknologi IPv6 - Solusi untuk Keterbatasan IPv4 (60 menit)**
 
 ### A. Keterbatasan IPv4 sebagai Problem Statement (20 menit)
 - **Address Exhaustion**: 
@@ -49,7 +184,7 @@ Setelah sesi ini, peserta akan mampu:
 
 ---
 
-## 🎯 **SESI 2: Review & Synthesis User Research (15 menit)**
+## 🎯 **SESI 3: Review & Synthesis User Research (15 menit)**
 
 ### User Research Findings Gallery Walk
 **Setup:** Setiap kelompok menampilkan hasil user research mereka di dinding kelas
@@ -85,7 +220,7 @@ Setelah sesi ini, peserta akan mampu:
 
 ---
 
-## 🔍 **SESI 3: Root Cause Analysis Framework (20 menit)**
+## 🔍 **SESI 4: Root Cause Analysis Framework (20 menit)**
 
 ### The "5 Whys" Technique untuk Network Problems
 
@@ -158,7 +293,7 @@ Setelah sesi ini, peserta akan mampu:
 
 ---
 
-## 📝 **SESI 4: Problem Statement Framework (20 menit)**
+## 📝 **SESI 5: Problem Statement Framework (20 menit)**
 
 ### SMART Problem Statement Template
 
