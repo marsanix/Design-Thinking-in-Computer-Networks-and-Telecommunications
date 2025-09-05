@@ -25,12 +25,66 @@ Setelah sesi ini, peserta akan mampu:
   - **Enhanced Mobile Broadband (eMBB)**: Kecepatan hingga 10 Gbps
   - **Ultra-Reliable Low Latency (URLLC)**: Latency < 1ms
   - **Massive Machine Type Communication (mMTC)**: 1 juta device/km²
-  
+
 - **Use Cases 5G**:
   - Autonomous vehicles
   - Industrial IoT dan Industry 4.0
   - Augmented/Virtual Reality
   - Smart cities dan smart healthcare
+
+#### **Perbandingan 4G LTE vs 5G**
+
+| Aspek | 4G LTE | 5G |
+|-------|--------|----|
+| **Generasi** | Generasi ke-4 (2009) | Generasi ke-5 (2020) |
+| **Kecepatan** | Hingga ±100 Mbps – 1 Gbps | Hingga ±10 – 20 Gbps |
+| **Latensi (delay)** | ±30-50 ms | < 1 ms (real-time) |
+| **Jumlah perangkat** | Ribuan perangkat per km² | Hingga 1 juta perangkat per km² |
+| **Spektrum** | < 6 GHz | Low band, mid band, & mmWave (> 24 GHz) |
+| **Teknologi utama** | MIMO, OFDMA | Massive MIMO, Beamforming, Network Slicing |
+| **Contoh penggunaan** | Streaming video, browsing cepat | IoT, mobil otonom, AR/VR, smart city |
+| **Kelemahan** | Kadang lemot saat banyak pengguna | Infrastruktur mahal, jangkauan terbatas |
+
+#### **Latensi 5G**
+#### ⏱️ **Apa itu Latensi?**
+
+**Latensi** adalah waktu tunda antara perintah yang dikirim sampai respon diterima.
+
+**Contoh:** Ketika kamu klik "Enter" di komputer untuk membuka situs, latensi adalah jeda (dalam milidetik) dari klikmu → sampai situs mulai merespon.
+
+**Analogi:** Kalau kecepatan internet diibaratkan sebagai lebar jalan tol (berapa banyak mobil bisa lewat), maka latensi adalah seberapa cepat lampu hijau menyala saat kamu mau jalan.
+
+#### 📉 **Latensi pada Jaringan**
+
+- **4G:** sekitar 30–50 ms
+- **5G:** bisa < 1 ms (hampir tanpa jeda)
+- **Catatan:** 1 ms = 0,001 detik — secepat kedipan mata!
+
+#### 🎮 **Mengapa Latensi Rendah Itu Penting?**
+
+##### **1. Gaming Online** 🎮
+- Main game FPS (contoh: Valorant, PUBG, Mobile Legends) butuh respon cepat
+- Kalau latensi tinggi (ping besar), muncul lag/delay
+
+##### **2. Kendaraan Otonom** 🚗
+- Mobil tanpa sopir butuh komunikasi real-time dengan sensor, kamera, dan sistem lalu lintas
+- Keterlambatan 1 detik bisa menyebabkan kecelakaan
+
+##### **3. Remote Surgery (Operasi Jarak Jauh)** 🏥
+- Dokter di satu negara bisa mengoperasikan pasien di negara lain dengan robot bedah
+- Butuh koneksi tanpa jeda, karena 1 ms saja sangat berharga
+
+##### **4. IoT & Robot Industri** 🤖
+- Mesin pabrik yang saling terhubung harus sinkron dalam hitungan milidetik
+- Latensi rendah membuat produksi lebih aman & efisien
+
+#### **Kelebihan dan Kekurangan 5G**
+
+| Kelebihan | Kekurangan |
+|-----------|------------|
+| Kecepatan hingga 10 Gbps | Infrastruktur mahal, jangkauan terbatas |
+| Latency < 1 ms | Kadang lemot saat banyak pengguna |
+| 1 juta device/km² | |
 
 ### B. Microwave Link Technology (35 menit)
 - **Prinsip Kerja Microwave**:

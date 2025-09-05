@@ -1,0 +1,228 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .site-box { fill: #f0f8ff; stroke: #4169e1; stroke-width: 2; }
+      .router { fill: #ff6b6b; stroke: #d63031; stroke-width: 2; }
+      .switch { fill: #74b9ff; stroke: #0984e3; stroke-width: 2; }
+      .firewall { fill: #fd79a8; stroke: #e84393; stroke-width: 2; }
+      .server { fill: #55a3ff; stroke: #2d3436; stroke-width: 2; }
+      .pc { fill: #a29bfe; stroke: #6c5ce7; stroke-width: 2; }
+      .iot { fill: #00b894; stroke: #00a085; stroke-width: 2; }
+      .cloud { fill: #ffeaa7; stroke: #fdcb6e; stroke-width: 2; }
+      .fiber { stroke: #e17055; stroke-width: 4; }
+      .wan { stroke: #636e72; stroke-width: 3; stroke-dasharray: 5,5; }
+      .lan { stroke: #2d3436; stroke-width: 2; }
+      .text { font-family: Arial, sans-serif; font-size: 12px; fill: #2d3436; }
+      .title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #2d3436; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 14px; fill: #636e72; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="600" y="30" text-anchor="middle" class="title">SecureNet Enterprise Solution - Network Topology</text>
+  <text x="600" y="50" text-anchor="middle" class="subtitle">Multi-Site Enterprise Network with Advanced Technologies</text>
+  
+  <!-- Internet Cloud -->
+  <ellipse cx="600" cy="100" rx="80" ry="40" class="cloud"/>
+  <text x="600" y="105" text-anchor="middle" class="text">Internet</text>
+  
+  <!-- Head Office (Jakarta) -->
+  <rect x="50" y="200" width="400" height="350" class="site-box" rx="10"/>
+  <text x="250" y="220" text-anchor="middle" class="title">Head Office - Jakarta</text>
+  <text x="250" y="240" text-anchor="middle" class="subtitle">Data Center & Main Operations</text>
+  
+  <!-- Head Office Components -->
+  <!-- Main Router -->
+  <rect x="220" y="260" width="60" height="40" class="router" rx="5"/>
+  <text x="250" y="285" text-anchor="middle" class="text">ISR 4331</text>
+  
+  <!-- Firewall -->
+  <rect x="220" y="320" width="60" height="40" class="firewall" rx="5"/>
+  <text x="250" y="345" text-anchor="middle" class="text">ASA 5516</text>
+  
+  <!-- Core Switch -->
+  <rect x="220" y="380" width="60" height="40" class="switch" rx="5"/>
+  <text x="250" y="405" text-anchor="middle" class="text">Cat 9300</text>
+  
+  <!-- Data Center Servers -->
+  <rect x="80" y="450" width="40" height="30" class="server" rx="3"/>
+  <text x="100" y="470" text-anchor="middle" class="text">Web</text>
+  
+  <rect x="130" y="450" width="40" height="30" class="server" rx="3"/>
+  <text x="150" y="470" text-anchor="middle" class="text">Email</text>
+  
+  <rect x="180" y="450" width="40" height="30" class="server" rx="3"/>
+  <text x="200" y="470" text-anchor="middle" class="text">DNS</text>
+  
+  <rect x="230" y="450" width="40" height="30" class="server" rx="3"/>
+  <text x="250" y="470" text-anchor="middle" class="text">DHCP</text>
+  
+  <rect x="280" y="450" width="40" height="30" class="server" rx="3"/>
+  <text x="300" y="470" text-anchor="middle" class="text">File</text>
+  
+  <rect x="330" y="450" width="40" height="30" class="server" rx="3"/>
+  <text x="350" y="470" text-anchor="middle" class="text">DB</text>
+  
+  <!-- Load Balancer -->
+  <rect x="380" y="450" width="50" height="30" class="server" rx="3"/>
+  <text x="405" y="470" text-anchor="middle" class="text">LB</text>
+  
+  <!-- User PCs -->
+  <rect x="80" y="500" width="30" height="25" class="pc" rx="3"/>
+  <text x="95" y="517" text-anchor="middle" class="text">PC1</text>
+  
+  <rect x="120" y="500" width="30" height="25" class="pc" rx="3"/>
+  <text x="135" y="517" text-anchor="middle" class="text">PC2</text>
+  
+  <!-- IoT Devices -->
+  <circle cx="350" cy="380" r="15" class="iot"/>
+  <text x="350" y="385" text-anchor="middle" class="text">IoT</text>
+  
+  <circle cx="380" cy="380" r="15" class="iot"/>
+  <text x="380" y="385" text-anchor="middle" class="text">Cam</text>
+  
+  <!-- Branch Office (Surabaya) -->
+  <rect x="500" y="300" width="300" height="250" class="site-box" rx="10"/>
+  <text x="650" y="320" text-anchor="middle" class="title">Branch Office - Surabaya</text>
+  <text x="650" y="340" text-anchor="middle" class="subtitle">IT Department Branch</text>
+  
+  <!-- Branch Components -->
+  <rect x="620" y="360" width="60" height="40" class="router" rx="5"/>
+  <text x="650" y="385" text-anchor="middle" class="text">ISR 4321</text>
+  
+  <rect x="620" y="420" width="60" height="40" class="switch" rx="5"/>
+  <text x="650" y="445" text-anchor="middle" class="text">Cat 9200</text>
+  
+  <rect x="520" y="480" width="30" height="25" class="pc" rx="3"/>
+  <text x="535" y="497" text-anchor="middle" class="text">PC3</text>
+  
+  <rect x="560" y="480" width="30" height="25" class="pc" rx="3"/>
+  <text x="575" y="497" text-anchor="middle" class="text">PC4</text>
+  
+  <rect x="720" y="480" width="40" height="30" class="server" rx="3"/>
+  <text x="740" y="500" text-anchor="middle" class="text">Local</text>
+  
+  <!-- Remote Office (Bali) -->
+  <rect x="850" y="400" width="250" height="200" class="site-box" rx="10"/>
+  <text x="975" y="420" text-anchor="middle" class="title">Remote Office - Bali</text>
+  <text x="975" y="440" text-anchor="middle" class="subtitle">Small Branch Office</text>
+  
+  <!-- Remote Components -->
+  <rect x="945" y="460" width="60" height="40" class="router" rx="5"/>
+  <text x="975" y="485" text-anchor="middle" class="text">ISR 4221</text>
+  
+  <rect x="945" y="520" width="60" height="40" class="switch" rx="5"/>
+  <text x="975" y="545" text-anchor="middle" class="text">Cat 2960</text>
+  
+  <rect x="870" y="570" width="30" height="25" class="pc" rx="3"/>
+  <text x="885" y="587" text-anchor="middle" class="text">PC5</text>
+  
+  <rect x="910" y="570" width="30" height="25" class="pc" rx="3"/>
+  <text x="925" y="587" text-anchor="middle" class="text">PC6</text>
+  
+  <!-- 5G Tower -->
+  <rect x="1050" y="200" width="40" height="80" class="iot" rx="5"/>
+  <text x="1070" y="245" text-anchor="middle" class="text">5G</text>
+  <text x="1070" y="260" text-anchor="middle" class="text">Tower</text>
+  
+  <!-- Connections -->
+  <!-- Internet to Head Office -->
+  <line x1="600" y1="140" x2="250" y2="260" class="wan"/>
+  
+  <!-- Head Office Internal -->
+  <line x1="250" y1="300" x2="250" y2="320" class="lan"/>
+  <line x1="250" y1="360" x2="250" y2="380" class="lan"/>
+  <line x1="250" y1="420" x2="250" y2="450" class="lan"/>
+  
+  <!-- Server connections -->
+  <line x1="220" y1="450" x2="100" y2="450" class="lan"/>
+  <line x1="220" y1="450" x2="150" y2="450" class="lan"/>
+  <line x1="220" y1="450" x2="200" y2="450" class="lan"/>
+  <line x1="280" y1="450" x2="300" y2="450" class="lan"/>
+  <line x1="280" y1="450" x2="350" y2="450" class="lan"/>
+  <line x1="280" y1="450" x2="405" y2="450" class="lan"/>
+  
+  <!-- PC connections -->
+  <line x1="220" y1="420" x2="95" y2="500" class="lan"/>
+  <line x1="220" y1="420" x2="135" y2="500" class="lan"/>
+  
+  <!-- IoT connections -->
+  <line x1="280" y1="400" x2="350" y2="380" class="lan"/>
+  <line x1="280" y1="400" x2="380" y2="380" class="lan"/>
+  
+  <!-- WAN Connections (Fiber) -->
+  <!-- Head Office to Branch -->
+  <line x1="450" y1="280" x2="620" y2="380" class="fiber"/>
+  <text x="535" y="325" class="text">Fiber 1Gbps</text>
+  
+  <!-- Head Office to Remote -->
+  <line x1="450" y1="300" x2="945" y2="480" class="fiber"/>
+  <text x="700" y="385" class="text">Fiber 100Mbps</text>
+  
+  <!-- Branch to Remote (Backup) -->
+  <line x1="800" y1="440" x2="945" y2="500" class="wan"/>
+  <text x="870" y="465" class="text">Backup Link</text>
+  
+  <!-- Branch Internal -->
+  <line x1="650" y1="400" x2="650" y2="420" class="lan"/>
+  <line x1="650" y1="460" x2="535" y2="480" class="lan"/>
+  <line x1="650" y1="460" x2="575" y2="480" class="lan"/>
+  <line x1="680" y1="440" x2="740" y2="480" class="lan"/>
+  
+  <!-- Remote Internal -->
+  <line x1="975" y1="500" x2="975" y2="520" class="lan"/>
+  <line x1="975" y1="560" x2="885" y2="570" class="lan"/>
+  <line x1="975" y1="560" x2="925" y2="570" class="lan"/>
+  
+  <!-- 5G Connection -->
+  <line x1="1070" y1="280" x2="975" y2="460" class="wan" stroke-dasharray="10,5"/>
+  <text x="1020" y="365" class="text">5G Link</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="650" width="300" height="120" fill="white" stroke="#636e72" stroke-width="1" rx="5"/>
+  <text x="200" y="670" text-anchor="middle" class="title">Legend</text>
+  
+  <line x1="70" y1="685" x2="100" y2="685" class="fiber"/>
+  <text x="110" y="690" class="text">Fiber Optic Link</text>
+  
+  <line x1="70" y1="705" x2="100" y2="705" class="wan"/>
+  <text x="110" y="710" class="text">WAN Connection</text>
+  
+  <line x1="70" y1="725" x2="100" y2="725" class="lan"/>
+  <text x="110" y="730" class="text">LAN Connection</text>
+  
+  <rect x="200" y="680" width="20" height="15" class="router" rx="2"/>
+  <text x="230" y="692" class="text">Router</text>
+  
+  <rect x="200" y="700" width="20" height="15" class="switch" rx="2"/>
+  <text x="230" y="712" class="text">Switch</text>
+  
+  <rect x="200" y="720" width="20" height="15" class="firewall" rx="2"/>
+  <text x="230" y="732" class="text">Firewall</text>
+  
+  <rect x="200" y="740" width="20" height="15" class="server" rx="2"/>
+  <text x="230" y="752" class="text">Server</text>
+  
+  <!-- IP Address Information -->
+  <rect x="400" y="650" width="350" height="120" fill="white" stroke="#636e72" stroke-width="1" rx="5"/>
+  <text x="575" y="670" text-anchor="middle" class="title">IP Addressing Scheme</text>
+  
+  <text x="420" y="690" class="text">Head Office (Jakarta): 192.168.1.0/24</text>
+  <text x="420" y="710" class="text">Branch Office (Surabaya): 192.168.2.0/24</text>
+  <text x="420" y="730" class="text">Remote Office (Bali): 192.168.3.0/24</text>
+  <text x="420" y="750" class="text">WAN Links: 10.0.0.0/30 series</text>
+  
+  <!-- VLAN Information -->
+  <rect x="800" y="650" width="350" height="120" fill="white" stroke="#636e72" stroke-width="1" rx="5"/>
+  <text x="975" y="670" text-anchor="middle" class="title">VLAN Segmentation</text>
+  
+  <text x="820" y="690" class="text">VLAN 10: Management</text>
+  <text x="820" y="710" class="text">VLAN 20: Users</text>
+  <text x="820" y="730" class="text">VLAN 30: Servers</text>
+  <text x="820" y="750" class="text">VLAN 100: IoT Devices</text>
+  
+  <text x="1020" y="690" class="text">VLAN 40: Guest</text>
+  <text x="1020" y="710" class="text">VLAN 200: DMZ</text>
+  <text x="1020" y="730" class="text">IPv6: 2001:db8::/32</text>
+  <text x="1020" y="750" class="text">Security: ACL + Firewall</text>
+</svg>
