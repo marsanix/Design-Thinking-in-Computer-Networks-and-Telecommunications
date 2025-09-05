@@ -102,6 +102,75 @@ Setelah sesi ini, peserta akan mampu:
   - ✅ Instalasi cepat, bandwidth tinggi
   - ❌ Terpengaruh cuaca, butuh line-of-sight
 
+#### 📡 **Apa itu Microwave Link?**
+
+**Microwave Link** adalah teknologi komunikasi nirkabel yang menggunakan gelombang mikro (frekuensi 1–40 GHz) untuk mengirim data dari satu titik ke titik lain.
+
+Biasanya dipakai untuk backbone jaringan atau penghubung antar BTS (Base Transceiver Station) tanpa perlu kabel serat optik.
+
+#### 🔑 **Cara Kerja Microwave Link**
+
+1. Data diubah menjadi sinyal gelombang mikro
+2. Sinyal dikirim menggunakan antena parabola/microwave dish
+3. Komunikasi dilakukan **line of sight (LOS)** → artinya antena pemancar dan penerima harus saling terlihat langsung, tanpa terhalang gedung/pegunungan
+4. Jarak jangkauan biasanya **5–50 km**, tergantung kondisi cuaca, frekuensi, dan daya antena
+
+#### 📊 **Kelebihan Microwave Link**
+
+- ✅ Tidak perlu menggali tanah untuk kabel → cocok di daerah pegunungan/pulau
+- ✅ Bisa dipasang lebih cepat dibanding serat optik
+- ✅ Biaya relatif lebih murah untuk jarak menengah
+- ✅ Kecepatan cukup tinggi (hingga ratusan Mbps, bahkan Gbps dengan teknologi terbaru)
+
+#### ⚠️ **Kekurangan Microwave Link**
+
+- ❌ Butuh jalur LOS (line of sight) → kalau ada gunung/gedung tinggi, harus buat menara relay
+- ❌ Rentan gangguan cuaca (hujan lebat, badai bisa melemahkan sinyal → rain fade)
+- ❌ Kapasitas lebih kecil dibanding serat optik
+
+#### 📍 **Contoh Penggunaan Microwave Link**
+
+- **Operator seluler** → menghubungkan BTS di daerah yang belum ada serat optik
+- **Jaringan TV/Radio** → mengirim sinyal siaran antar stasiun
+- **Internet pedesaan/pulau** → solusi cepat sebelum ada fiber optic
+- **Militer & keamanan** → komunikasi rahasia di lapangan
+
+#### 💡 **Analogi Sederhana**
+
+Bayangkan kamu menggunakan senter laser untuk mengirim sinyal ke temanmu di seberang bukit.
+
+- Kalau garis pandang jelas → sinyal sampai dengan cepat
+- Kalau ada pohon/tembok menghalangi → sinyal terputus
+
+**Itulah prinsip kerja Microwave Link.**
+
+#### 📡 **Apa itu Frekuensi?**
+
+**Frekuensi** adalah jumlah getaran atau gelombang yang terjadi dalam 1 detik.
+
+**Satuan frekuensi** adalah Hertz (Hz).
+
+##### **Satuan Frekuensi:**
+- 👉 **1 Hz** = 1 gelombang per detik
+- 👉 **1 kHz (kilohertz)** = 1.000 gelombang per detik
+- 👉 **1 MHz (megahertz)** = 1 juta gelombang per detik
+- 👉 **1 GHz (gigahertz)** = 1 miliar gelombang per detik
+
+#### 🔎 **Contoh Sederhana**
+
+- Kalau kamu menggerakkan tangan ke atas–bawah **10 kali dalam 1 detik**, berarti frekuensinya **10 Hz**
+- Kalau sebuah sinyal Wi-Fi bekerja di **2,4 GHz**, artinya gelombangnya bergetar **2,4 miliar kali setiap detik**!
+
+#### 📊 **Frekuensi dalam Kehidupan Sehari-hari**
+
+| **Aplikasi** | **Frekuensi** |
+|---|---|
+| Suara manusia | 20 Hz – 20 kHz |
+| Radio FM | 88 – 108 MHz |
+| Wi-Fi | 2,4 GHz & 5 GHz |
+| Microwave oven | 2,45 GHz |
+| Cahaya tampak | Ratusan THz (terahertz) |
+
 ---
 
 ## 🎯 **SESI 2: Review & Warm-up (10 menit)**
